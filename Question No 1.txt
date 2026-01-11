@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        float obtainedMarks;
+        float totalMarks;
+        float result;
+        
+        System.out.println("Please enter the marks you obtained: ");
+        obtainedMarks = input.nextFloat();
+        
+        System.out.println("Please enter the total maximum marks: ");
+        totalMarks = input.nextFloat();
+        
+        result = (obtainedMarks / totalMarks) * 100;
+        
+        System.out.println("Your calculated percentage is: " + result + "%");
+    }
+}

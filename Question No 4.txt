@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        double finalOriginalPrice, priceAfterDiscount, discountPercentage, calculatedDiscountAmount;
+        
+        System.out.println("Please enter the discount percentage value: ");
+        discountPercentage = scan.nextDouble();
+        
+        System.out.println("Please enter the price paid after discount: ");
+        priceAfterDiscount = scan.nextDouble();
+        
+        calculatedDiscountAmount = (discountPercentage / 100) * priceAfterDiscount;
+        finalOriginalPrice = calculatedDiscountAmount + priceAfterDiscount;
+        
+        System.out.println("The calculated original price was: " + finalOriginalPrice);
+    }
+}

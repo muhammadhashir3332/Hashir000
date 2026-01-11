@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner inputScanner = new Scanner(System.in);
+        
+        double originalPrice, discountValue, finalPrice;
+        
+        System.out.println("Please input the full price of the item: ");
+        originalPrice = inputScanner.nextDouble();
+        
+        System.out.println("Enter the discount value to deduct: ");
+        discountValue = inputScanner.nextDouble();
+        
+        finalPrice = originalPrice - discountValue;
+        
+        System.out.println("The final price after discount is: " + finalPrice);
+    }
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        
+        double volts, watts, amps;
+        
+        System.out.println("Input the total Amperes used: ");
+        amps = keyboard.nextDouble();
+        
+        System.out.println("Input the voltage level: ");
+        volts = keyboard.nextDouble();
+        
+        watts = volts * amps;
+        
+        System.out.println("Total Power Usage: " + watts + " Watts");
+    }
+}

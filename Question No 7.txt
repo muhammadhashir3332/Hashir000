@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner dataInput = new Scanner(System.in);
+        
+        int userNumber;
+        
+        System.out.println("Please provide an integer to check: ");
+        userNumber = dataInput.nextInt();
+        
+        if (userNumber % 2 != 0) {
+            System.out.println(userNumber + " is classified as an ODD value.");
+        } else {
+            System.out.println(userNumber + " is classified as an EVEN value.");
+        }
+    }
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        
+        double area, height, sideA, sideB;
+        
+        System.out.println("Please input the length of the first parallel side: ");
+        sideA = userInput.nextDouble();
+        
+        System.out.println("Please input the length of the second parallel side: ");
+        sideB = userInput.nextDouble();
+        
+        System.out.println("Now, enter the height of the trapezoid: ");
+        height = userInput.nextDouble();
+        
+        area = (sideA + sideB) * height / 2;
+        
+        System.out.println("The total Area is: " + area);
+    }
+}
